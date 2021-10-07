@@ -1,6 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-* {
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+*{
     box-sizing: border-box;
-    padding: 0;
     margin: 0;
+    padding: 0;
+}
+
+body{
+   font-family: 'Open Sans', sans-serif;
+}
+
+:root{
+    --light-color: #047aed;
+    --dark-color: #040a43;
+
+}
+.navbar{
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--light-color);
+    padding-right: 40px;
+    overflow: auto;
+}
+.nav-links{
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    align-items: center;
+}
+.nav-links a{
+    padding: 10px;
+    margin: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+.settings{
+    overflow: hidden;
+}
+.settings .drop-button{
+    font-size: 16px;
+    color: white;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-family: inherit;
+    padding: 10px;
+}
+.settings-dropdown{
+    display: none;
+    position: absolute;
+    background-color: var(--light-color);
+    min-width: 120px;
+}
+    .settings-dropdown button{
+        color: white;
+        display: block;
+        display: block;
+        border: none;
+        background-color: var(--light-color);
+        padding: 10px;
+        font-family: inherit;
+        font-size: 16px;
+    }
+.settings-dropdown button:hover{
+    text-decoration: underline;
+}
+.settings:hover .settings-dropdown {display: block;}
+.nav-links a:hover{
+    text-decoration: underline;
+}
+
+.logo{
+    background: white;
+    height: 55px;
+    border: 3px solid var(--dark-color);
+    border-radius: 10%;
+    margin-left: 3px;
 }
