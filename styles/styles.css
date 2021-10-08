@@ -12,7 +12,7 @@ body{
 
 :root{
     --light-color: #047aed;
-    --dark-color: #040a43;
+    --dark-color: #060e5a;
 
 }
 .navbar{
@@ -59,7 +59,7 @@ body{
         color: white;
         display: block;
         display: block;
-        border: none;
+        border: 5px solid var(--dark-color);
         background-color: var(--light-color);
         padding: 10px;
         font-family: inherit;
@@ -67,9 +67,10 @@ body{
     }
 .settings-dropdown button:hover{
     text-decoration: underline;
+    background: var(--dark-color);
 }
 .settings:hover .settings-dropdown {display: block;}
-.nav-links a:hover{
+.nav-links a:hover, button:hover{
     text-decoration: underline;
 }
 
@@ -78,5 +79,38 @@ body{
     height: 55px;
     border: 3px solid var(--dark-color);
     border-radius: 10%;
-    margin-left: 3px;
+    margin-left: 50px;
+}
+
+.first-back{
+    background: var(--light-color);
+    display: flex;
+    color: black;
+    padding: 100px;
+    justify-content: center;
+}
+
+.welcome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    border-radius: 180px;
+    padding: 0px 30px;
+    width: 500px;
+}
+.selfie{
+    height: 300px;
+    width: 300px;
+    margin-left: 40px;
+    border-radius: 50%;
+    box-shadow: 10px 5px 9px var(--dark-color);
+}
+
+h1{
+    padding-bottom: 20px;
+}
+
+.welcome p{
+    font-size: 20px;
 }
