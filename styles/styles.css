@@ -16,7 +16,7 @@ body{
     min-height: 100vh;
     
 }
-body .dark{
+.dark{
     font-family: 'Open Sans', sans-serif;
     --light-color: #060e5a;
     --sub-color: #047aed;
