@@ -48,9 +48,21 @@ body{
     text-decoration: none;
     color: white;
     font-size: 16px;
+    background-image: linear-gradient(#FFF, #FFF);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    transition: background-size .5s, color .5s;
 }
 .settings{
     overflow: hidden;
+}
+.drop-button {
+    background-image: linear-gradient(#FFF, #FFF);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    transition: background-size .5s, color .5s;
 }
 .settings .drop-button{
     font-size: 16px;
@@ -83,8 +95,12 @@ body{
     color: var(--white);
 }
 .settings:hover .settings-dropdown {display: block;}
-.nav-links a:hover, button:hover{
-    text-decoration: underline;
+.nav-links a:hover, .drop-button:hover{
+    border-top: 2px solid #FFF;
+    border-bottom: 2px solid #FFF;  
+    color: var(--light-color);
+    background-size: 100% 100%;
+
 }
 
 .logo{
