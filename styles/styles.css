@@ -14,7 +14,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    
+    --mint: #047aed;
 }
 .dark{
     font-family: 'Open Sans', sans-serif;
@@ -25,7 +25,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    
+    --mint: #82c6e6;
 }
 .navbar{
     height: 55px;
@@ -93,6 +93,7 @@ body{
     text-decoration: underline;
     background: var(--dark);
     color: var(--white);
+    cursor: pointer;
 }
 .settings:hover .settings-dropdown {display: block;}
 .nav-links a:hover, .drop-button:hover{
@@ -102,7 +103,6 @@ body{
     background-size: 100% 100%;
 
 }
-
 .logo{
     background: white;
     height: 55px;
@@ -152,15 +152,15 @@ h1{
     align-items: center;
     flex: 1;
 }
-.contact-button button{
-    background-color: var(--light-color);
+form .email{
+    background-color: var(--mint);
     color: white;
     padding: 20px;
     border: none;
     border-radius: 24px;
     width: 140px;
     font-size: 16px;
-    transition: width 2s;
+    transition: width 1s;
 }
 
 footer{
