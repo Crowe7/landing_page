@@ -1,0 +1,129 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+   font-family: 'Open Sans', sans-serif;
+   --light-color: #047aed;
+   --sub-color: #2A04EC;
+   --white: #FFFFFF;
+   --dark: #121212;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    --mint: #047aed;
+}
+.dark{
+    font-family: 'Open Sans', sans-serif;
+    --light-color: #121212;
+    --sub-color: #4e4e53;
+    --white: #202124;
+    --dark: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    --mint: #82c6e6;
+}
+.navbar{
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--light-color);
+    padding-right: 40px;
+    overflow: auto;
+}
+.nav-links{
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    align-items: center;
+}
+.nav-links a{
+    padding: 10px;
+    margin: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    background-image: linear-gradient(#FFF, #FFF);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    transition: background-size .5s, color .5s;
+}
+.settings{
+    overflow: hidden;
+}
+.drop-button {
+    background-image: linear-gradient(#FFF, #FFF);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    transition: background-size .5s, color .5s;
+}
+.settings .drop-button{
+    font-size: 16px;
+    color: white;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-family: inherit;
+    padding: 10px;
+}
+.settings-dropdown{
+    display: none;
+    position: absolute;
+    background-color: var(--light-color);
+    min-width: 120px;
+}
+.settings-dropdown button{
+    color: white;
+    display: block;
+    display: block;
+    border: 5px solid var(--dark);
+    background-color: var(--light-color);
+    padding: 10px;
+    font-family: inherit;
+    font-size: 16px;
+}
+.settings-dropdown button:hover{
+    text-decoration: underline;
+    background: var(--dark);
+    color: var(--white);
+    cursor: pointer;
+}
+.settings:hover .settings-dropdown {display: block;}
+.nav-links a:hover, .drop-button:hover{
+    border-top: 2px solid #FFF;
+    border-bottom: 2px solid #FFF;  
+    color: var(--light-color);
+    background-size: 100% 100%;
+
+}
+footer{
+    background-color: var(--light-color );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    padding: 20px;
+}
+.logo{
+    background: white;
+    height: 55px;
+    border: 3px solid var(--sub-color);
+    border-radius: 10%;
+    margin-left: 50px;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+footer a:hover{
+    color: rgb(255, 221, 157);
+    text-decoration: underline;
+}
