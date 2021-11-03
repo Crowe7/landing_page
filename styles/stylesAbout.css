@@ -108,8 +108,8 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-shrink: 0;
     padding: 20px;
+    margin-top: auto;
 }
 .logo{
     background: white;
@@ -126,4 +126,9 @@ footer a{
 footer a:hover{
     color: rgb(255, 221, 157);
     text-decoration: underline;
+}
+.flex-wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
