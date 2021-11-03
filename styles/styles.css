@@ -110,7 +110,11 @@ body{
     border-radius: 10%;
     margin-left: 50px;
 }
-
+.flex-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 .first-back{
     background: var(--light-color);
     display: flex;
@@ -168,7 +172,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-shrink: 0;
+    margin-top: auto;
     padding: 20px;
 }
 
