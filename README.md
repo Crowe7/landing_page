@@ -7,7 +7,7 @@ made a landing page with dark theme in HTML and CSS
 #### Light Theme
 ![LightTheme](/images/LightTheme.PNG)
 #### Dark Theme
-![DarkTheme](/images/DarkTheme.PNG)
+![DarkTheme](/images/DarkMode.PNG)
 
 
 ## Built with
